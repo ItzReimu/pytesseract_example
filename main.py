@@ -19,6 +19,7 @@ def text_detection(image_path, output_path=None, visualize=False):
     # 读取图片
     pytesseract.pytesseract.tesseract_cmd = r"tesseract.exe路径"
     # https://tesseract-ocr.github.io/
+    # https://github.com/tesseract-ocr/tesseract
     image = cv2.imread(image_path)
     if image is None:
         raise ValueError("无法读取图片，请检查路径是否正确")
